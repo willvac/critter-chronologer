@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: critter-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: critter
+  template:
+    metadata:
+      labels:
+        component: critter
+    spec:
+      containers:
+        - name: critter
+          image: willvac/critter
+          ports:
+            - containerPort: 8082
+          env:
+            - name: POSTGRES_USER
+              value: sa
+            - name: PG_HOST
+              value: postgres-node-port
+            - name: PG_PORT
+              value: '5432'
+            - name: PG_DBNAME
+              value: critter
+            - name: POSTGRES_PASSWORD
+              value: sa1234
+            - name: DB_INIT
+              value: embedded

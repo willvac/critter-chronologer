@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.udacity.jdnd.course3.critter.CritterFunctionalTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.036 s - in com.udacity.jdnd.course3.critter.CritterFunctionalTest
