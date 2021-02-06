@@ -2,6 +2,12 @@
 
 Critter Chronologer a Software as a Service application that provides a scheduling interface for a small business that takes care of animals. This Spring Boot project will allow users to create pets, owners, and employees, and then schedule events for employees to provide services for pets.
 
+For this project, I implemented the data access for Critter Chronologer twice.
+- In the [first implementation](https://github.com/willvac/critter-chronologer/tree/master/critter-chronologer-repository-pattern), I implemented Critter Chronologer to persist and access data using Hibernate and Spring Data JPA.
+- In the [second implementation](https://github.com/willvac/critter-chronologer/tree/master/critter-chronologer-dao-pattern), I implemeted Critter Chronologer to persist and access data using JDBCTemplate and SQL.
+
+Lastly, I [deployed Critter Chronologer](https://github.com/willvac/critter-chronologer/tree/master/critter-chronologer-k8s-local) on a local Kubernetes cluster.
+
 
 ## Getting Started
 
